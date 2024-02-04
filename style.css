@@ -1,5 +1,8 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+ 
+
+  
   html {
     scroll-behavior: smooth;
     
@@ -10,6 +13,8 @@ body{background-color:
     zoom: 150%;
 
 }
+ 
+
 body::-webkit-scrollbar {
     width: 7px;
 }
@@ -469,6 +474,8 @@ td:hover,th:hover {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    width: 100%;
+    overflow-x: hidden;
     
     
     
@@ -525,3 +532,78 @@ background-color: rgba(247, 211, 167, 0.685);
   #p3{
     background-color: rgba(77, 133, 101, 0.53);
   }
+
+  #about{
+    margin: 0px 160px 210px 160px;  
+    zoom: 115%;
+  }
+  .img-p{
+    display: flex; 
+    flex-direction: column; 
+    max-width: 30%; 
+  }
+  #projects{
+    margin: 0px 160px 0px 160px;
+  }
+
+  
+    
+@media screen and (max-width : 1800px){
+    #about{
+        zoom: 100%;
+    }
+}
+
+@media screen and (max-width : 1600px){
+    #about{
+        zoom: 90%;
+    }
+    .warp-p{
+        zoom: 90%;
+    }
+}
+@media screen and (min-width : 1301px) and (max-width : 1500px){
+    #about{
+        zoom: 80%;
+    }
+    .warp-p{
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (max-width : 1300px){
+    .profile_cont{
+        zoom: 100%;  
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .warp-p{
+        flex-direction: column;
+        align-items: center;
+    }
+    .abtme_cont{
+        flex-direction: column;
+    }
+    .txt{
+        width: 100%;
+    }
+    .img-p{
+        max-width: 100%;
+    }
+    .pro-img{
+        transform: scale(0.8);
+    }
+    .e-head{
+        font-size: 10px;
+    }
+    .exp-a{
+        transform: scale(0.9);
+    }
+    #subject{
+        width: 90%;
+    }
+    .pro-cont{
+        width: max-content;
+    }
+}
