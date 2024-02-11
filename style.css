@@ -77,7 +77,7 @@ h1,h3{
     transition: all 300ms ease;
 }
 
-.hero-img{
+.hero-img {
     height: 12rem;
     width: 12rem;
     background-image: url(images/profile.jpg);
@@ -85,21 +85,77 @@ h1,h3{
     background-size: cover;
     border: 3px solid rgb(0, 0, 0);
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    -webkit-animation: morph 8s ease-in-out infinite;
-    animation: morph 8s ease-in-out infinite;
+    animation: morph 6s ease-in-out infinite alternate;
+    transition: border-radius 300ms ease-out;
 }
-@keyframes morph{
+
+@keyframes morph {
     0% {
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+        border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+        transition: border-radius 300ms ease-out;
     }
-    25%{
-        border-radius: 40% 50% 50% 50%/55% 30% 70% 40%;
+    20% {
+        border-radius: 40% 60% 60% 40% / 50% 50% 60% 60%;
+        transition: border-radius 300ms ease-out;
     }
-    50% {
-        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    40% {
+        border-radius: 60% 40% 40% 60% / 50% 60% 50% 60%;
+        transition: border-radius 300ms ease-out;
+    }
+    60% {
+        border-radius: 40% 60% 60% 40% / 60% 50% 60% 50%;
+        transition: border-radius 300ms ease-out;
+    }
+    80% {
+        border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+        transition: border-radius 300ms ease-out;
     }
     100% {
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+        border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+        transition: border-radius 300ms ease-out;
+    }
+}
+
+.hero-img:hover {
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% !important;
+    /* animation-play-state: paused !important; Ensure that the animation is paused on hover */
+    transition: border-radius 300ms ease-out;
+    /* Apply a transition for smoother hover effect */
+}
+.hero-b{
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.hero-b:hover{
+    animation: rot linear infinite 1s;
+    background-image: linear-gradient(45deg ,hsl(0, 0%, 100%), hsl(0, 0%, 0%));
+    height: 12.7rem;
+    width: 12.7rem;
+}
+.hero-b:hover > * {
+    animation: rot-c linear infinite 1s;
+}
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes rot-c{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
     }
 }
 .profile_cont{
