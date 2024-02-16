@@ -8,3 +8,19 @@ Beta 0.1 :
 Beta 0.2:
 
     Added support for 768px tablets
+
+
+Beta 0.3:
+
+    Added Profile animation
+
+
+Beta 0.4:
+
+    Added more Profile animations
+
+Beta 0.5:
+
+    Added Nav Features and Optimised layout for main display 
+    (Support for other size displays is not sure)
+    Tried to add a gif background but the quality was not good 
