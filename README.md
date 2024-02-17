@@ -24,3 +24,9 @@ Beta 0.5:
     Added Nav Features and Optimised layout for main display 
     (Support for other size displays is not sure)
     Tried to add a gif background but the quality was not good 
+
+Beta 0.6:
+
+    Nothing much by visual but removed some spaces in code
+    changed favicon
+    added new pic when hoverd
