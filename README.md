@@ -29,4 +29,4 @@ Beta 0.6:
 
     Nothing much by visual but removed some spaces in code
     changed favicon
-    added new pic when hoverd
+    added new pic when hovered
