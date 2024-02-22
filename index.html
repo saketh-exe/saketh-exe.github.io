@@ -6,7 +6,7 @@
     <title>P.Vishnu Saketh</title>
     <link rel="icon" type="jpeg" href="images/abtme.jpg">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/acbb96d20a.js" crossorigin="anonymous"></script>
+ 
 </head>
 <body>
    <div class="background">
@@ -44,7 +44,7 @@
         <p id="abtme">About Me</p>
         <div class="abtme_cont">
             <div class="img-p">
-                <img src="images/premium_photo-1669829639756-bf38f2b1c4a1.avif" class="abtp" style="width: 250px; height:250px; border-radius: 15px;box-shadow: 2px 2px 5px hsl(209, 77%, 80%); margin-bottom: 15px;">
+                <img src="images/premium_photo-1669829639756-bf38f2b1c4a1.jpg" class="abtp" style="width: 250px; height:250px; border-radius: 15px;box-shadow: 2px 2px 5px hsl(209, 77%, 80%); margin-bottom: 15px;">
                 <p style="color: hsl(0, 0%, 35%); font-size: 11px; font-family: Poppins, sans-serif; margin-bottom: 20px; width: 100%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut minima ipsa totam, fuga, non illum tempore vero quidem quibusdam facere et. Beatae voluptatibus soluta ut qui harum unde eveniet, corporis ipsa sit laborum! Hic, qui, a libero quis adipisci maiores dolores consequuntur error aliquid excepturi expedita quasi debitis sequi.</p>
             </div>
             <div class="txt">
@@ -52,14 +52,14 @@
                     <div id="exp">
                         <i class="fa-solid fa-medal"></i>
                         <p style="margin: 0%; margin-top: 9px;">Experience</p>
-                        <p style="font-size: 9px; margin: 0; margin-top: 3px;color: hsl(0, 0%, 39%);">1+ Year</p>
-                        <p style="font-size: 9px; margin: 0; color: hsl(0, 0%, 39%);">Development</p>
+                        <p class="abt-p">1+ Year</p>
+                        <p  class="abt-p">Development</p>
                     </div>
                     <div id="edu">
                         <i class="fa-solid fa-graduation-cap"></i>
                         <p style="margin: 0%; margin-top: 9px;">Education</p>
-                        <p style="font-size: 9px; margin: 0; margin-top: 3px;color: hsl(0, 0%, 39%);">B tech</p>
-                        <p style="font-size: 9px; margin: 0; color: hsl(0, 0%, 39%);">Amrita Vishwa Vidhyapeetham</p>
+                        <p class="abt-p">B tech</p>
+                        <p class="abt-p">Amrita Vishwa Vidhyapeetham</p>
                     </div>
                 </div>            
                 <table style="zoom: 100%;">
@@ -71,22 +71,22 @@
                     </tr>
                     <tr>
                         <td>10th</td>
-                        <td>79%</td>
+                        <td>-%</td>
                         <td>2020-21</td>
                     </tr>
                     <tr>
                         <td>12th</td>
-                        <td>81%</td>
+                        <td>-%</td>
                         <td>2022-23</td>
                     </tr>
                     <tr>
                         <td>Jee</td>
-                        <td>86%</td>
+                        <td>-%</td>
                         <td>2023</td>
                     </tr>
                     <tr>
                         <td>Btech-1st-sem</td>
-                        <td>8.24</td>
+                        <td>--</td>
                         <td>2023</td>
                     </tr>
                 </table>
@@ -135,7 +135,7 @@
                     <div class="exp-a">
                         <i class="fa-brands fa-git-alt"></i>
                         <h3>Git</h3>
-                        <p>Intermediate</p>
+                        <p>Basic</p>
                     </div>
                 </div>
                 
@@ -149,11 +149,12 @@
         <p class="sub-p">Projects</p>
         <div class="warp-p">
             <div class="pro-cont" id="p1">
-                <img src="images/project-1.png" alt="project1" class="pro-img">
+                <img src="images/NETWORX-logos.jpeg" alt="project1" class="pro-img">
                 <p id="pro-p">Networx</p>
                 <div class="p_buttons">
                     <button id="pro-but" onclick="location.href='https://github.com/'">GitHub</button>
-                    <button id="pro-but" onclick="location.href='https://www.youtube.com/'">LiveDemo</button>
+                    <button id="pro-but" onclick="window.location.href='c-project\index.html'">LiveDemo</button>
+
                 </div>
             </div>
             <div class="pro-cont" id="p2">
@@ -207,7 +208,7 @@
                   <textarea id="subject" name="subject" placeholder=" Write something.."  ></textarea>
                 </div>
 
-                  <input type="submit" value="Submit" style="width: 100px; border-radius: 15px; border: 1px solid black; padding: 10px;">
+                  <input type="submit" value="Submit" style="width: 100px; border-radius: 15px; border: 1px solid black; padding: 10px; cursor: pointer;">
             </div>
                 </form>
               </div>
@@ -226,6 +227,7 @@
         <p class="generic-p">Copyright © 2024 P.Vishnu Saketh. All Rights Reserved.</p>
     </footer>
 </body>
+<script src="https://kit.fontawesome.com/acbb96d20a.js" crossorigin="anonymous"></script>
 <script>
      var screenWidth = window.innerWidth;
     console.log('Current screen width: ' + screenWidth + ' pixels');
