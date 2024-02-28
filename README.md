@@ -30,3 +30,21 @@ Beta 0.6:
     Nothing much by visual but removed some spaces in code
     changed favicon
     added new pic when hovered
+
+Beta 0.7:
+
+    added animation and tried to make website more performent
+    
+
+Beta 0.8:
+
+    added javascript a lil bit
+    added some func to projects img
+
+Beta 0.9:
+
+    added some more gradient animations.
+    changed some hover colors.
+    added gihub links to projects.
+    changed projects pics and name. 
+    Getting things ready for major release.

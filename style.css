@@ -9,14 +9,16 @@
   }
   html {
     scroll-behavior: smooth;
-    
+    font-family: 'Open Sans', sans-serif;
+   
 }
 body{
     background-color:
     hsl(0, 0%, 100%);
     margin: 0%;
     zoom: 150%;
-
+    user-select: none;
+  
 }
 body::-webkit-scrollbar {
     width: 7px;
@@ -31,11 +33,13 @@ body::-webkit-scrollbar-thumb {
 p{
     font-family: 'Open Sans', sans-serif;
     margin: 0%;
+    cursor: default;
 }
 h1,h3{
     font-family: 'Open Sans', sans-serif;
     margin: 0%;
     font-size: medium;
+    cursor: default;
 }
 /* Nav-Bar Styles */
 .navbar, .links{
@@ -67,10 +71,10 @@ h1,h3{
     transition: all 300ms ease;
     background-color: hsla(0, 0%, 100%, 0.589);
     cursor: none;
-    padding: 4px;
+    padding: 4px 6px 4px 6px;
     border-radius: 5px;
     
-    box-shadow: 2px 2px 5px hsl(230, 93%, 83%),-2px -2px 5px hsl(40, 95%, 70%),-2px 2px 5px hsl(40, 95%, 70%),2px -2px 5px hsl(40, 95%, 70%);
+    box-shadow: 2px 2px 5px hsl(230, 100%, 72%),-2px -2px 5px hsl(273, 100%, 50%),-2px 2px 5px hsl(230, 100%, 72%),2px -2px 5px hsl(273, 100%, 50%);
 }
 #name{
     font-size: 15px;
@@ -402,6 +406,7 @@ h1,h3{
     width: 300px;
     height: 300px;
     border-radius: 15px;
+    cursor: pointer;
 }
 .pro-cont{
     display: flex;
@@ -521,7 +526,7 @@ td:hover,th:hover {
     text-shadow: 3px 3px 2px rgb(255, 255, 255);
 }
 .pro-cont:hover .pro-img {
-    transform: scale(1.01);
+   
     opacity: 1;
     z-index: 1;
     transition: all 300ms ease-in-out;
@@ -535,9 +540,9 @@ td:hover,th:hover {
     flex-direction: column;
     max-width: fit-content;
     gap: 20px;
-    background-color: rgba(255, 220, 159, 0.397);
+    background-color: rgba(255, 220, 159, 0.445);
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 .l-lable{
     font-family: 'Open Sans', sans-serif; 
@@ -602,13 +607,18 @@ background-color: rgba(155, 206, 250, 0.63);
 background-color: rgba(247, 211, 167, 0.685);
   }
   #p1{
-    background-color:hsl(44deg 48.48% 80.87% / 60%);
+    background-color:hsl(30.21deg 95.56% 71.54% / 59%);
+    border: #ffe260 solid;
   }
   #p2{
-    background-color: hsl(21, 58%, 91%);
+    background-color: hsl(190.91deg 100% 91.46% / 76%);
+    border: #88ddff solid;
+    position: relative;
+    
   }
   #p3{
-    background-color: rgba(77, 133, 101, 0.53);
+    background-color: rgb(138 18 4 / 46%);
+    border: #750000 solid;
   }
   #about{
     margin: 0px 100px 105px 100px;  
@@ -756,4 +766,48 @@ background-color: rgba(247, 211, 167, 0.685);
     padding-right: 50px;
     padding-left: 50px;
     position: relative;
+}
+
+.pop-up{
+    width: 300px;
+    height: 300px;
+    border: black 2px solid;
+    position: absolute;
+    z-index: 1;
+    
+    background-color: #2c2c2cc7;
+    opacity: 1;
+    display: none;
+    flex-direction: column;
+    border-radius: 15px;
+  
+  transition: all 800ms ease;
+    justify-content: space-around;
+    user-select: none;
+    cursor: pointer;
+}
+.pop-up:focus{
+    transform: scale(1.1);
+    transition: all 800ms ease;
+}
+.pop-up div{
+    font-size: larger;
+    color: rgb(169, 159, 255);
+    margin: 10px;
+display: flex;
+gap: 10px;
+
+}
+#l-but{
+    width: 100px; 
+    border-radius: 10px; 
+    border: 1.5px solid black; 
+    padding: 10px; 
+    cursor: pointer;
+    
+    transition: 300ms all ease;
+}
+#l-but:hover{
+    background-color: hsl(0, 0%, 58%);
+    transition: 300ms all ease;
 }
