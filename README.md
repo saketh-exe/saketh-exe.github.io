@@ -48,3 +48,9 @@ Beta 0.9:
     added gihub links to projects.
     changed projects pics and name. 
     Getting things ready for major release.
+
+Beta 10.0:
+
+    Final touches and completed the final commit for this beta version
+    added popups for my experience and projects. 
+    animated them.
