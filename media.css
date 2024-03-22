@@ -1,0 +1,96 @@
+@media screen and  (max-width : 1600px) and (min-width: 1200px){
+    .profile-image,.profile-text{
+        transform: scale(0.8);
+    }
+  .Design{
+    height: 653vh;
+  }
+  
+    .Home,.aboutme,.Experience,.projects{
+
+    margin-bottom: 200px;
+  }
+  .aboutme-content{
+    transform: scale(0.9);
+  }
+  .content-items1{
+    height: 50%;
+  }
+}
+@media screen and  (max-width : 1201px) and (min-width: 1000px){
+    html{
+        scroll-snap-type: none;
+    }
+    .nav1{
+        display: none;
+    }
+    .profile-image,.profile-text{
+        transform: scale(0.7);
+    }
+  .Design{
+    height: 653vh;
+  }
+  
+    .Home,.aboutme,.Experience,.projects{
+
+    margin-bottom: 200px;
+  }
+  .aboutme-content{
+    transform: scale(0.9);
+  }
+  .content-items1{
+    height: 50%;
+  }
+  .projects{
+    height: max-content;
+
+  }
+  .projects-content{
+    flex-direction: column;
+    gap: 20px;
+    
+  }
+  .pro-cont{
+    width: 50%;
+  }
+}
+@media screen and  (max-width : 999px) and (min-width: 700px){
+    html{
+        scroll-snap-type: none;
+    }
+    .nav1{
+        display: none;
+    }
+    .profile-image,.profile-text{
+        transform: scale(0.6);
+    }
+  .Design{
+    height: 1000vh;
+  }
+  
+    .Home,.aboutme,.Experience,.projects{
+
+    margin-bottom: 300px;
+  }
+  .aboutme-content{
+    transform: scale(0.7);
+  }
+  .Experience-content{
+    transform: scale(0.7);
+  }
+  .content-items1{
+    height: 38%;
+  }
+  .projects{
+    height: max-content;
+
+  }
+  .projects-content{
+    flex-direction: column;
+    gap: 20px;
+    
+  }
+  .pro-cont{
+    width: 40%;
+  }
+}

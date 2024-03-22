@@ -47,7 +47,7 @@ button{
     position: absolute;
     z-index: -100;
     left: 20px;
-
+    border-radius: 0px 0px 50px 50px;
     background-image: linear-gradient(rgb(0 245 211),rgb(255, 141, 141),rgb(177, 81, 255),rgb(103, 103, 255));
 }
 .Design2{
