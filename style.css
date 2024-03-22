@@ -139,6 +139,56 @@ button{
         opacity: 0;
     }
 }
+.Design9{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(0 245 211);
+    animation: thunder 1s infinite ease-in alternate;
+    transform: rotate(90deg);
+background-position: right;
+    top: 103%;
+    
+    z-index: -1100;
+}
+@keyframes thunder {
+    0%{
+        top: 0%;
+        transform: rotate(0deg);
+        border-radius: 1%;
+        
+    }
+    100%{
+        top: 103%;
+        transform: rotate(360deg);
+        border-radius: 50%;
+    }
+}
+#home,#about,#exp1,#projects{
+    position: relative;
+}
+
+#about .nav1{
+    right: 7.3%;
+    bottom: 5.8%;
+}
+#exp1 .nav1{
+    right: 7%;
+    bottom: 5%;
+}
+#projects .nav1{
+    right: 7%;
+    bottom: 5.5%;
+}
+.nav1{
+    position: absolute;
+    right: 7%;
+    bottom: 15%;
+    transform: scale(2.5);
+    cursor: pointer;
+    z-index: 100;
+}
 navbar{
     display: flex;
     height: 30px;
@@ -432,6 +482,7 @@ animation: text-rev 8s steps(21) 1s forwards;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
+    position: relative;
 
 }
 .aboutme-card{
