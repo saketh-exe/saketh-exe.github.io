@@ -20,6 +20,13 @@ html {
  color-scheme: dark;
  scroll-snap-type: y proximity;
 }
+html::-webkit-scrollbar{
+    display: none;
+}
+body::selection{
+    background-color: rgb(0 245 211);
+    color: black;
+}
 a{
     color: black;
     text-decoration: none;
@@ -40,8 +47,97 @@ button{
     position: absolute;
     z-index: -100;
     left: 20px;
-    /* background-color: rgb(0 245 211); */
+
     background-image: linear-gradient(rgb(0 245 211),rgb(255, 141, 141),rgb(177, 81, 255),rgb(103, 103, 255));
+}
+.Design2{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -100;
+    left: 80%;
+    top: -100px;
+    animation: uptodown 5s linear infinite 2s;
+    background-image: linear-gradient(rgb(0 245 211),rgb(255, 141, 141),rgb(177, 81, 255),rgb(103, 103, 255));
+}
+.Design3{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -100;
+    left: 20%;
+    top: -100px;
+    animation: uptodown 5s linear infinite 3s;
+    background-image: linear-gradient(rgb(0 245 211),rgb(255, 141, 141),rgb(177, 81, 255),rgb(103, 103, 255));
+}
+.Design4{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -100;
+    left: 50%;
+    top: -100px;
+    animation: uptodown 5s linear infinite;
+    background-image: linear-gradient(rgb(0 245 211),rgb(255, 141, 141),rgb(177, 81, 255),rgb(103, 103, 255));
+}
+.Design5{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -100;
+    left: 25%;
+    top: -100px;
+    animation: uptodown 5s linear infinite 1s;
+    background-image: linear-gradient(rgb(0 245 211),rgb(255, 141, 141),rgb(177, 81, 255),rgb(103, 103, 255));
+}
+.Design6{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -100;
+    left: 75%;
+    top: -100px;
+    animation: uptodown 5s linear infinite 5s;
+    background-image: linear-gradient(rgb(0 245 211),rgb(255, 141, 141),rgb(177, 81, 255),rgb(103, 103, 255));
+}
+.Design7{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -100;
+    left: 95%;
+    top: -100px;
+    animation: uptodown 5s linear infinite 3s;
+    background-image: linear-gradient(rgb(0 245 211),rgb(255, 141, 141),rgb(177, 81, 255),rgb(103, 103, 255));
+}
+.Design8{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -100;
+    left: 5%;
+    top: -100px;
+    animation: uptodown 5s linear infinite 7s;
+    background-image: linear-gradient(rgb(0 245 211),rgb(255, 141, 141),rgb(177, 81, 255),rgb(103, 103, 255));
+}
+@keyframes uptodown {
+    0%{
+        top: -100px;
+        opacity: 1;
+        filter: blur(10px);
+       
+    }
+    100%{
+        top: 90%;
+        opacity: 0;
+    }
 }
 navbar{
     display: flex;
@@ -381,6 +477,7 @@ table{
     border-collapse: separate;
     width: 80%;
     border-spacing: 20px;
+    background-color: rgba(83, 83, 83, 0.301);
     border-radius: 0px 0px 20px 20px;
 }
 th,td,caption{
@@ -492,6 +589,7 @@ text-align: center;
     border: 5px rgba(4, 243, 211) solid;
     border-radius: 20px;
     padding: 1%;
+    background-color: rgba(83, 83, 83, 0.301);
 }
 .Experience-cards h2{
     font-size: 40px;
