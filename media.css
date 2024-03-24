@@ -11,7 +11,7 @@
     margin-bottom: 200px;
   }
   .aboutme-content{
-    transform: scale(0.9);
+    transform: scale(0.7);
   }
   .content-items1{
     height: 50%;
@@ -93,4 +93,24 @@
   .pro-cont{
     width: 40%;
   }
+}
+
+@media screen and (max-height:700px) and (min-height:300px){
+  .profile-image,.profile-text{
+      transform: scale(0.8);
+  }
+.Design{
+  height: 653vh;
+}
+
+  .Home,.aboutme,.Experience,.projects{
+
+  margin-bottom: 200px;
+}
+.aboutme-content{
+  transform: scale(0.7);
+}
+.content-items1{
+  height: 50%;
+}
 }

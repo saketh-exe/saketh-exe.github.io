@@ -898,7 +898,7 @@ padding-bottom: 32rem;
  #form{
     width: 90%;
     background-color: #75000000;
-    height: 90%;
+    height: 100%;
     border: rgb(0 245 211) 5px solid;
     border-radius: 20px;
     padding: 30px;

@@ -1,5 +1,7 @@
 var screenWidth = window.innerWidth;
+var screenHeight = window.innerHeight;
 console.log('Current screen width: ' + screenWidth + ' pixels');
+console.log('Current screen width: ' + screenHeight + ' pixels');
 
 let item = document.getElementById('pop-up');
 let item2 = document.getElementById('pop-up2');
