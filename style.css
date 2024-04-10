@@ -7,6 +7,14 @@
   initial-value: 0deg;
   inherits: false;
 }
+:root{
+    --main-accent:rgb(0 245 211);
+    --sub-accent: white;
+    --orginal-bg :rgb(28, 28, 28);
+
+    --purple-bg: rgb(27, 22, 31);
+  
+}
 * {
     margin: 0px;
     padding: 0px;
@@ -24,7 +32,7 @@ html::-webkit-scrollbar{
     display: none;
 }
 body::selection{
-    background-color: rgb(0 245 211);
+    background-color: var(--main-accent);
     color: black;
 }
 a{
@@ -33,7 +41,57 @@ a{
 }
 body{
   
-    background-color: rgb(27, 27, 27);
+    background-color: var(--orginal-bg);
+}
+body.White_theme{
+  
+    background-color: var(--orginal-bg);
+    color: black;
+    i{
+        color: black;
+    }
+    
+   
+}
+body.Purple_theme{
+  
+    background-color: var(--purple-bg);
+    color: white;
+    i{
+        color: white;
+    }
+}
+body.High-contrast{
+  
+    background-color: var(--orginal-bg);
+    color: white;
+    i{
+        color: white;
+    }
+}
+body.Gold{
+  
+    background-color: var(--orginal-bg);
+    color: white;
+    i{
+        color: white;
+    }
+}
+body.Pink{
+  
+    background-color: var(--orginal-bg);
+    color: rebeccapurple;
+    i{
+        color: rebeccapurple;
+    }
+}
+body.norm{
+  
+    background-color: var(--orginal-bg);
+    color: rgb(255, 255, 255);
+    i{
+        color: rgb(255, 255, 255);
+    }
 }
 button{
     border: none;
@@ -48,7 +106,7 @@ button{
     z-index: -100;
     left: 20px;
     border-radius: 0px 0px 50px 50px;
-    background-image: linear-gradient(rgb(0 245 211),rgb(255, 141, 141),rgb(177, 81, 255),rgb(103, 103, 255));
+    background-image: linear-gradient(var(--main-accent),rgb(255, 141, 141),rgb(177, 81, 255),rgb(103, 103, 255));
 }
 .Design2{
     width: 20px;
@@ -59,7 +117,7 @@ button{
     left: 80%;
     top: -100px;
     animation: uptodown 5s linear infinite 2s;
-    background-image: linear-gradient(rgb(0 245 211),rgb(255, 141, 141),rgb(177, 81, 255),rgb(103, 103, 255));
+    background-image: linear-gradient(var(--main-accent),rgb(255, 141, 141),rgb(177, 81, 255),rgb(103, 103, 255));
 }
 .Design3{
     width: 20px;
@@ -70,7 +128,7 @@ button{
     left: 20%;
     top: -100px;
     animation: uptodown 5s linear infinite 3s;
-    background-image: linear-gradient(rgb(0 245 211),rgb(255, 141, 141),rgb(177, 81, 255),rgb(103, 103, 255));
+    background-image: linear-gradient(var(--main-accent),rgb(255, 141, 141),rgb(177, 81, 255),rgb(103, 103, 255));
 }
 .Design4{
     width: 20px;
@@ -81,7 +139,7 @@ button{
     left: 50%;
     top: -100px;
     animation: uptodown 5s linear infinite;
-    background-image: linear-gradient(rgb(0 245 211),rgb(255, 141, 141),rgb(177, 81, 255),rgb(103, 103, 255));
+    background-image: linear-gradient(var(--main-accent),rgb(255, 141, 141),rgb(177, 81, 255),rgb(103, 103, 255));
 }
 .Design5{
     width: 20px;
@@ -92,7 +150,7 @@ button{
     left: 25%;
     top: -100px;
     animation: uptodown 5s linear infinite 1s;
-    background-image: linear-gradient(rgb(0 245 211),rgb(255, 141, 141),rgb(177, 81, 255),rgb(103, 103, 255));
+    background-image: linear-gradient(var(--main-accent),rgb(255, 141, 141),rgb(177, 81, 255),rgb(103, 103, 255));
 }
 .Design6{
     width: 20px;
@@ -103,7 +161,7 @@ button{
     left: 75%;
     top: -100px;
     animation: uptodown 5s linear infinite 5s;
-    background-image: linear-gradient(rgb(0 245 211),rgb(255, 141, 141),rgb(177, 81, 255),rgb(103, 103, 255));
+    background-image: linear-gradient(var(--main-accent),rgb(255, 141, 141),rgb(177, 81, 255),rgb(103, 103, 255));
 }
 .Design7{
     width: 20px;
@@ -114,7 +172,7 @@ button{
     left: 95%;
     top: -100px;
     animation: uptodown 5s linear infinite 3s;
-    background-image: linear-gradient(rgb(0 245 211),rgb(255, 141, 141),rgb(177, 81, 255),rgb(103, 103, 255));
+    background-image: linear-gradient(var(--main-accent),rgb(255, 141, 141),rgb(177, 81, 255),rgb(103, 103, 255));
 }
 .Design8{
     width: 20px;
@@ -125,7 +183,7 @@ button{
     left: 5%;
     top: -100px;
     animation: uptodown 5s linear infinite 7s;
-    background-image: linear-gradient(rgb(0 245 211),rgb(255, 141, 141),rgb(177, 81, 255),rgb(103, 103, 255));
+    background-image: linear-gradient(var(--main-accent),rgb(255, 141, 141),rgb(177, 81, 255),rgb(103, 103, 255));
 }
 @keyframes uptodown {
     0%{
@@ -144,7 +202,7 @@ button{
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: rgb(0 245 211);
+    background-color: var(--main-accent);
     animation: thunder 1s infinite ease-in alternate;
     transform: rotate(90deg);
 background-position: right;
@@ -185,6 +243,7 @@ background-position: right;
     position: absolute;
     right: 7%;
     bottom: 15%;
+    color: var(--sub-accent);
     transform: scale(2.5);
     cursor: pointer;
     z-index: 100;
@@ -214,7 +273,7 @@ navbar i:hover{
     padding: 15px;
     /* box-shadow: 2px 2px 15px rgb(197, 197, 197); */
     cursor: none;
-    color: rgba(4, 243, 211);
+    color: var(--main-accent);
     backdrop-filter: blur(100px);
 }
 .Home{
@@ -351,7 +410,7 @@ navbar i:hover{
     padding: 13px;
     background-color: hsla(0, 0%, 17%, 0.664);
     border: solid 1px hsl(0, 0%, 24%);
-    color: whitesmoke;
+    color: var(--sub-accent);
     border-radius: 50px;
 
 }
@@ -360,7 +419,7 @@ navbar i:hover{
     opacity: 1;
     z-index: 1;
     background-color: hsl(0, 0%, 24%);
-    color: whitesmoke;
+    color: var(--sub-accent);
     cursor: pointer;
     box-shadow: 2px 2px 10px hsl(230, 93%, 83%);
     transition: all 300ms linear;
@@ -368,7 +427,7 @@ navbar i:hover{
 
 #Developer{
     position: relative;
-    color: antiquewhite;
+    color: var(--main-accent);
     width: max-content;
     font-family: monospace;
 }
@@ -383,13 +442,13 @@ navbar i:hover{
 }
 
 #Developer::before{
-background-color: rgb(27, 27, 27);
+background-color: var(--orginal-bg);
 animation: text-rev 8s steps(21) 1s forwards;
 }
 
 #Developer::after{
     width: 0.5rem;
-    background-color: aliceblue;
+    background-color: var(--main-accent);
     border-radius: 3px;
     animation: text-rev 8s 1s steps(21) forwards, blink 700ms infinite;
 }
@@ -465,7 +524,7 @@ animation: text-rev 8s steps(21) 1s forwards;
     width: 75%;
     font-size: larger;
     height: auto;
-    color: rgb(161, 255, 243);
+    color: var(--main-accent);
 }
 .aboutme-experience-part{
     width: 60%;
@@ -487,7 +546,7 @@ animation: text-rev 8s steps(21) 1s forwards;
 }
 .aboutme-card{
     border-radius: 20px;
-    border: white 2px solid;
+    border: var(--sub-accent) 2px solid;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -521,7 +580,7 @@ animation: text-rev 8s steps(21) 1s forwards;
     align-items: center;
 }
 table{
-    border: 1px rgba(4, 243, 211) solid;
+    border: 1px var(--main-accent) solid;
     text-align: center;
     padding: 0.5rem;
     border-radius: 20px;
@@ -532,7 +591,7 @@ table{
     border-radius: 0px 0px 20px 20px;
 }
 th,td,caption{
-    border: 1px rgba(4, 243, 211) solid;
+    border: 1px var(--main-accent) solid;
     text-align: center;
     padding: 0.7rem;
     border-radius: 15px;
@@ -637,14 +696,14 @@ text-align: center;
     width: 35%;
     height: max-content;
     background-color: rgba(247, 210, 161, 0);
-    border: 5px rgba(4, 243, 211) solid;
+    border: 5px var(--main-accent) solid;
     border-radius: 20px;
     padding: 1%;
     background-color: rgba(83, 83, 83, 0.301);
 }
 .Experience-cards h2{
     font-size: 40px;
-    border-bottom: 5px rgba(4, 243, 211) solid;
+    border-bottom: 5px var(--main-accent) solid;
     padding: 10px;
     margin-bottom: 10px;
     text-decoration: underline;
@@ -656,7 +715,7 @@ text-align: center;
 }
 .langs{
 position: relative;
-    color: white;
+    color: var(--sub-accent);
     font-size: 20px;
     text-align: center;
     margin: 40px 52px 20px 52px;
@@ -765,7 +824,7 @@ position: relative;
 }
 #pro-but:hover{
     background-color:hsl(0, 0%, 31%) ;
-    color: whitesmoke;
+    color: var(--sub-accent);
     cursor: pointer;
     box-shadow: 2px 2px 10px hsl(230, 93%, 83%);
     transition: all 300ms ease;
@@ -813,7 +872,7 @@ position: relative;
 }
 .pop-up div{
     font-size: 35px;
-    color: rgb(0 245 211);
+    color: var(--main-accent);
     margin: 10px;
 display: flex;
 gap: 10px;
@@ -899,7 +958,7 @@ padding-bottom: 32rem;
     width: 90%;
     background-color: #75000000;
     height: 100%;
-    border: rgb(0 245 211) 5px solid;
+    border: var(--main-accent) 5px solid;
     border-radius: 20px;
     padding: 30px;
  }
@@ -914,8 +973,8 @@ padding-bottom: 32rem;
     height: 0rem;
     border-radius: 20px;
     padding: 20px;
-    border: rgb(0 245 211) 3px solid ;
-    color: rgb(0 245 211);
+    border: var(--main-accent) 3px solid ;
+    color: var(--main-accent);
     font-size: 20px;
     padding: 20px;
     font-family: monospace;
@@ -930,7 +989,7 @@ label{
     height: 100%;
     border-radius: 20px;
     background-color: transparent;
-    color: rgb(0 245 211);
+    color: var(--main-accent);
     font-size: 20px;
     padding: 20px;
     font-family: monospace;
@@ -943,9 +1002,9 @@ label{
 #submit{
     padding: 10px 30px 10px 30px;
     font-size: 20px;
-    border: 2px solid rgb(0 245 211);
+    border: 2px solid var(--main-accent);
     background-color: transparent;
-    color: rgb(0 245 211);
+    color: var(--main-accent);
     border-radius: 50px;
     transition: 300ms ease;
 }
@@ -963,7 +1022,7 @@ cursor: pointer;
 }
 .link1{
     text-decoration: none;
-    color: hsl(0, 0%, 100%);
+    color: var(--sub-accent);
     font-family: 'Open Sans', sans-serif;
     transition: all 300ms ease;
 }
@@ -973,4 +1032,69 @@ cursor: pointer;
     text-decoration: underline;
     text-underline-offset: 1rem;
     cursor: pointer;
+}
+.theme-switcher{
+    box-sizing: content-box;
+    width: 260px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.404);
+    backdrop-filter: blur(20px);
+    position: fixed;
+    z-index: 1000;
+    bottom: 0px;
+    right: -225px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    border-radius: 50px 0px 0px 50px;
+    
+    button{
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: monospace;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    
+}
+@keyframes theme-close {
+    0%{
+        right: 0px;
+    }
+    100%{
+        right: -225px;
+    }
+}
+@keyframes theme-open {
+    0%{
+        right: -225px;
+    }
+    100%{
+        right: 0px;
+    }
+}
+#white{
+    background-image: linear-gradient(135deg,rgb(224, 210, 210) 50%,rgb(0, 102, 88) 51%);
+}
+#high-c{
+    background-image: linear-gradient(135deg,black 50%,white 51%);
+}
+#pink{
+    background-image: linear-gradient(135deg,hotpink 50%,rebeccapurple 51%);
+}
+#gold{
+    background-image: linear-gradient(135deg,rgb(29, 29, 29) 50%,gold 51%);
+}
+#purp{
+    background-image: linear-gradient(135deg,rgb(27, 22, 31) 50%,aqua 51%);
+}
+#norm{
+    background-image: linear-gradient(135deg,rgb(28, 28, 28) 50%,rgb(0 245 211) 51%);
 }
