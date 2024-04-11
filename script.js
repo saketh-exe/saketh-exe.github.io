@@ -179,3 +179,17 @@ theme_close.addEventListener("click",() => {
     }
     
 })
+
+document.querySelector(".mp-close").addEventListener("click",() => {
+    console.log("click");
+    document.querySelector(".more-projects").style.animation = "mp-deslide 1s ease 1 forwards";
+    document.querySelector(".mp-button").style.animation = "mpb-deslide 1s ease 1 forwards";
+    body.style.overflowY = "scroll"
+})
+document.querySelector(".mp-button").addEventListener("click",() => {
+    console.log("click");
+    document.querySelector(".more-projects").scrollTop = 0;
+    document.querySelector(".more-projects").style.animation = "mp-slide 1s ease 1 forwards";
+    document.querySelector(".mp-button").style.animation = "mpb-slide 1s ease 1 forwards";
+    body.style.overflow = "hidden"
+})
